@@ -20,8 +20,7 @@
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
   <ul id="menu">
-<ul>
-      <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
       <li><a href="Hal-10-emergency.html">Emergency</a></li>
        <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
        <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
@@ -32,7 +31,7 @@
   </ul>
 </nav>
 
-
+<!-- HEADER (hero / banner) -->
 <header id="home">
   <h1>Perhotelan</h1>
   <p style="background-color:#A67C00;">
@@ -40,7 +39,9 @@
   </p>
 </header>
 
+<!-- OVERLAY -->
 <div id="overlay" onclick="toggleMenu()"></div>
+
 <div class="card">
 <h2><b>Penginapan Kota Solo</b></h2>
 <h3>Hotel berbintang (Luxury)</h3>
@@ -181,4 +182,10 @@ document.querySelectorAll(".harga").forEach((el, i) => {
   </div>
 </footer>
 </body>
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+</script>
 </html>
