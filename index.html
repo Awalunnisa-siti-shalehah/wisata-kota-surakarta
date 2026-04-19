@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kota Solo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Hal-10-emergency.html">Emergency</a></li>
+    <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+    <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+    <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+    <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<header id="home">
+  <h1>Kota Solo</h1>
+  <p style="background-color:#A67C00;">
+    The Beauty of Solo
+  </p>
+</header>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<!-- SEARCH -->
+<section id="about">
+
+<form class="search-bar">
+  <div class="input-group">
+    <label>Minat</label>
+    <select id="kategori">
+      <option>Pilih Minat</option>
+      <option>Destinasi</option>
+      <option>Kuliner</option>
+      <option>Budaya</option>
+    </select>
+  </div>
+  <button type="button" onclick="filterKategori()">Cari</button>
+</form>
+
+<h2 id="destinasi">Galeri destinasi kota solo</h2>
+
+<div class="gallery">
+  <a href="Patungslamet.html"><img src="wisata1.jpg"></a>
+  <a href="keraton.html"><img src="wisata2.jpg"></a>
+  <a href="lokanta.html"><img src="wisata3.jpg"></a>
+  <a href="kampung.html"><img src="wisata4.jpg"></a>
+  <a href="Tamansriwedari.html"><img src="wisata5.jpg"></a>
+</div>
+<h2 id="kuliner">Galeri kuliner kota solo</h2>
+<div class="container-img">
+  <div class="img-overlay">
+    <a href="hal-5-kuliner.html">
+      <img src="Makanan4.jpg">
+      <div class="text">Kuliner khas Surakarta</div>
+    </a>
+  </div>
+<h2 id="budaya">Galeri kebudayaan kota solo</h2>
+  <div class="img-overlay">
+    <a href="hal-4-budaya.html">
+      <img src="Budaya2.jpg">
+      <div class="text">Keanekaragaman budaya</div>
+    </a>
+  </div>
+</div>
+
+<h2 id="event">upcoming event</h2>
+<div class="container-img">
+  <div class="img-overlay">
+    <a href="destinasi.html">
+      <img src="Festival 1.jpg">
+      <div class="text">Event mendatang</div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+<script>
+  function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+function filterKategori(){
+  let kategori = document.getElementById("kategori").value;
+
+  if(kategori == "Destinasi"){
+    document.getElementById("destinasi").scrollIntoView({behavior:"smooth"});
+  } 
+  else if(kategori == "Kuliner"){
+    document.getElementById("kuliner").scrollIntoView({behavior:"smooth"});
+  } 
+  else if(kategori == "Budaya"){
+    document.getElementById("budaya").scrollIntoView({behavior:"smooth"});
+  }
+}
+</script>
+
+</body>
+  </html>
