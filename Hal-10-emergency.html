@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kota solo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <!-- MENU -->
+  <ul id="menu">
+<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Hal-10-emergency.html">Emergency</a></li>
+       <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+       <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+       <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+           <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+      <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER (hero / banner) -->
+<header id="home">
+  <h1>Emergency</h1>
+  <p style="background-color:#A67C00;">
+   Bantuan darurat
+  </p>
+</header>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<div class="card">
+<h2>Pusat Bantuan Wisata</h2>
+<h3>Nomor Darurat</h3>
+<p>Polisi : 110</p>
+<p>Ambulans : 118</p>
+<p>Pemadam Kebakaran : 113</p>
+<p>Informasi Pariwisata Surakarta : Dinas Pariwisata Kota Surakarta</p>
+</div>
+
+<div class="card">
+<h3>Pertanyaan Umum (FAQ)</h3>
+<p><b>Apakah Kota Surakarta aman untuk wisatawan?</b><br>
+Ya, Surakarta merupakan kota wisata yang relatif aman dan ramah bagi pengunjung.</p>
+<p><b>Apakah air keran bisa diminum?</b><br>
+Disarankan menggunakan air minum kemasan selama berwisata.</p>
+<p><b>Kapan waktu terbaik berkunjung ke Surakarta?</b><br>
+Musim kemarau lebih nyaman untuk kegiatan wisata.</p>
+</div>
+
+<div class="card">
+<h3>Layanan Bantuan Wisata</h3>
+<p>Website ini menyediakan layanan informasi wisata untuk membantu wisatawan mendapatkan panduan selama berada di Kota Surakarta.</p>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+
+</body>
+<script>function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+</script>
+</body>
+</html>
