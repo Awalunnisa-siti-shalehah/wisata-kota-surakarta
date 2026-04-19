@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kota solo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <!-- MENU -->
+  <ul id="menu">
+<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Hal-10-emergency.html">Emergency</a></li>
+       <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+       <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+       <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+           <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+      <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER (hero / banner) -->
+<header id="home">
+  <h1>Plan you trip</h1>
+  <p style="background-color:#A67C00;">
+   persyaratan dan kelengkapan
+  </p>
+</header>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+
+
+<div class="card">
+<h2 style="background-color:#e2b94f;">Syarat Visa</h2>
+
+<p>
+Wisatawan internasional yang berkunjung ke Indonesia wajib memiliki paspor dengan masa berlaku minimal 6 bulan. 
+Beberapa negara memerlukan visa kunjungan wisata sebelum masuk ke Indonesia. 
+Wisatawan domestik tidak memerlukan visa untuk berkunjung ke Surakarta.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2 style="background-color:#e2b94f;">Mata Uang</h2>
+<p>Mata uang resmi yang digunakan adalah Rupiah (IDR). Penukaran uang dapat dilakukan di bandara, bank, dan money changer resmi.Pembayaran digital juga tersedia di banyak tempat wisata dan pusat perbelanjaan.
+</p>
+<img src="Rupiah.jpg">
+<h3>Rupiah (IDR)</h3>
+</div>
+</div>
+
+
+
+<div class="card">
+
+<h2 style="background-color:#e2b94f;">Deskripsi Transportasi</h2>
+
+<p>
+Kota Surakarta dapat diakses melalui berbagai sarana transportasi seperti pesawat melalui Bandara Adi Soemarmo, 
+kereta api melalui Stasiun Solo Balapan dan Stasiun Purwosari, serta bus melalui Terminal Tirtonadi. 
+Transportasi dalam kota juga tersedia seperti Batik Solo Trans, becak, dan ojek online.
+</p>
+
+<p>
+Wisatawan dari luar kota dapat menggunakan bus, kereta api, atau kendaraan pribadi. 
+Sedangkan wisatawan dari luar pulau dapat menggunakan pesawat atau kapal laut.
+</p>
+
+</div>
+<div class="card">
+<h2 style="background-color:#e2b94f;">Konektivitas</h2>
+<p>Surakarta memiliki akses transportasi yang mudah melalui:</p>
+<h3>Akses Transportasi Menuju Kota Surakarta</h3>
+
+<div class="grid-container">
+
+<div class="grid-item">
+<img src="Transportasi1.jpg">
+<p>Bandara Adi Soemarmo</p>
+</div>
+
+<div class="grid-item">
+<img src="Transportasi2.jpg">
+<p>Stasiun Solo Balapan</p>
+</div>
+
+<div class="grid-item">
+<img src="Transportasi3.jpg">
+<p>Stasiun Purwosari</p>
+</div>
+
+<div class="grid-item">
+<img src="Transportasi4.jpg">
+<p>Terminal Tirtonadi</p>
+</div>
+
+</div>
+</div>
+
+</body>
+
+
+<section class="avatar-gallery">
+
+<h2>Transportasi Lokal</h2>
+
+<div class="avatar-item">
+<div class="avatar">
+<img src="kendaraan1.jpg">
+</div>
+<p>Bus / Bus Tour</p>
+</div>
+
+<div class="avatar-item">
+<div class="avatar">
+<img src="kendaraan2.jpg">
+</div>
+<p>Kereta Api</p>
+</div>
+
+<div class="avatar-item">
+<div class="avatar">
+<img src="kendaraan3.jpg">
+</div>
+<p>Kendaraan Mobil</p>
+</div>
+
+<div class="avatar-item">
+<div class="avatar">
+<img src="kendaraan4.jpg">
+</div>
+<p>Kapal Laut</p>
+</div>
+
+<div class="avatar-item">
+<div class="avatar">
+<img src="kendaraan5.jpg">
+</div>
+<p>Pesawat Terbang</p>
+</div>
+
+<div class="avatar-item">
+<div class="avatar">
+<img src="kendaraan6.jpg">
+</div>
+<p>Kendaraan Bermotor</p>
+</div>
+
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+</body>
+<script>function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+</script>
+</html>
