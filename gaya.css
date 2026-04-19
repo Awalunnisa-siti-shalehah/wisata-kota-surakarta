@@ -1,0 +1,122 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #white;
+}
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:70px;
+display:flex;
+align-items:center;
+padding:0 20px;
+background:#722F37;
+z-index:10000;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo{
+width:45px;
+height:45px;
+object-fit:contain;
+border-radius:10px;
+background:#e2b94f;
+padding:5px;
+}
+
+.brand-text{
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.brand-text h1{
+font-size:20px;
+color:#fff;
+margin:0;
+}
+
+.brand-text span{
+font-size:12px;
+color:#e2b94f;
+letter-spacing:2px;
+}
+
+#welcome-screen{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background-image:url("Home.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.welcome-box{
+text-align:center;
+color:white;
+background:rgba(0,0,0,0.55);
+padding:40px;
+border-radius:12px;
+}
+
+.welcome-box h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.welcome-box p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn-masuk{
+text-decoration:none;
+background:#e2b94f;
+color:black;
+padding:12px 25px;
+border-radius:8px;
+font-weight:bold;
+}
+
+.btn-masuk:hover{
+background:#ffd76a;
+}
+.peta{
+padding:20px;
+margin-top:80px;
+text-align:center;
+}
+
+.peta iframe{
+border-radius:10px;
+}
+.card{
+width:300px;
+background:white;
+border-radius:10px;
+padding:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
