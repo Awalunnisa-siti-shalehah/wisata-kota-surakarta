@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kota solo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul id="menu">
+<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Hal-10-emergency.html">Emergency</a></li>
+       <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+       <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+       <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+           <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+      <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER (hero / banner) -->
+<header id="home">
+  <h1>Perhotelan</h1>
+  <p style="background-color:#A67C00;">
+   Rekomendasi penginapan
+  </p>
+</header>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<div class="card">
+<h2><b>Penginapan Kota Solo</b></h2>
+<h3>Hotel berbintang (Luxury)</h3>
+
+<img src="Hotel1.jpg">
+<h3>Alila Solo</h3>
+<p>Hotel tinggi dengan fasilitas lengkap dan rooftop view kota. Salah satu hotel paling premium di Solo.</p>
+<p>Lokasi: Jl. Slamet Riyadi No.562, Laweyan, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.7/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+<div class="card">
+<img src="Hotel2.jpg">
+<h3>The Royal Surakarta Heritage - Handwritten Collection</h3>
+<p>Hotel konsep heritage dekat pusat kota dan kawasan wisata budaya.</p>
+<p>Lokasi: Jl. Slamet Riyadi No.6, Pasar Kliwon, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.6/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+<div class="card">
+<img src="Hotel3.jpg">
+<h3>Swiss-Belhotel Solo</h3>
+<p>Hotel modern dengan kolam renang rooftop, spa, gym, dan lokasi strategis di pusat kota.</p>
+<p>Lokasi: Jl. Ahmad Yani No.45, Gilingan, Banjarsari, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.9/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+<div class="card">
+<h3>Hotel menengah (Mid-range)</h3>
+
+<img src="Hotel4.jpg">
+<h3>Solo Paragon Hotel & Residences</h3>
+<p>Dekat pusat belanja dan cocok untuk wisata keluarga.</p>
+<p>Lokasi: Jl. Dr. Sutomo, Mangkubumen, Banjarsari, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.6/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+<div class="card">
+<img src="Hotel5.jpg">
+<h3>The Sunan Hotel Solo</h3>
+<p>Hotel nyaman dengan fasilitas lengkap dan akses mudah ke pusat kota.</p>
+<p>Lokasi: Jl. Ahmad Yani No.40, Laweyan, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.6/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+<div class="card">
+<img src="Hotel6.jpg">
+<h3>HARRIS Hotel & Convention Solo</h3>
+<p>Hotel modern populer untuk wisata dan kegiatan keluarga.</p>
+<p>Lokasi: Jl. Slamet Riyadi No.464, Purwosari, Laweyan, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.7/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+<div class="card">
+<h3>Hotel hemat (Budget)</h3>
+
+<img src="Hotel6.jpg">
+<h3>POP! Hotel Solo</h3>
+<p>Cocok untuk pelajar atau backpacker.</p>
+<p>Lokasi: Jl. Slamet Riyadi No.464, Purwosari, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.4/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+<div class="card">
+<img src="Hotel7.jpg">
+<h3>Megaland Hotel Solo</h3>
+<p>Cocok untuk pelajar atau backpacker.</p>
+<p>Lokasi: Jl. Slamet Riyadi No.351, Laweyan, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.4/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+<div class="card">
+<img src="Hotel8.jpg">
+<h3>Diamond Hotel Solo</h3>
+<p>Pilihan hemat dekat pusat kota.</p>
+<p>Lokasi: Jl. Slamet Riyadi No.392, Purwosari, Surakarta.</p>
+<p><b>Rating : ★★★★ 4.5/5</b></p>
+<p class="harga"></p>
+</div>
+
+
+
+
+<script>
+const hargaHotel = [
+  "Rp 1.500.000 / malam",
+  "Rp 1.200.000 / malam",
+  "Rp 1.300.000 / malam",
+  "Rp 600.000 / malam",
+  "Rp 550.000 / malam",
+  "Rp 650.000 / malam",
+  "Rp 200.000 / malam",
+  "Rp 250.000 / malam",
+  "Rp 300.000 / malam"
+];
+
+document.querySelectorAll(".harga").forEach((el, i) => {
+  el.innerHTML = "<b>Harga:</b> " + hargaHotel[i];
+});
+</script>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+</body>
+</html>
