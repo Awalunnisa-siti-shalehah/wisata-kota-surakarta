@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+
+  
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+      <li><a href="Hal-10-emergency.html">Emergency</a></li>
+       <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+       <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+       <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+           <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+      <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <h1>Destinasi wisata</h1>
+  <p style="background-color:#A67C00;">
+    Patung Slamet Riyadi
+  </p>
+</header>
+
+<div id="overlay" onclick="toggleMenu()"></div>
+<div class="card">
+<img src="Wisata1.jpg">
+<h3 id="slamet">Patung Slamet Riyadi</h3>
+<p>Patung pahlawan nasional yang menjadi ikon Kota Solo.</p><p><b>info lengkap :</b>Slamet Riyadi adalah pahlawan nasional dari Solo yang gugur saat mempertahankan Indonesia di pertempuran melawan Belanda.Makanya dibuat patung. Bukan dekorasi taman biasa.Patung ini dibuat untuk mengenang jasa pahlawan nasional,simbol perjuangan masyarakat Solo,ikon kota Solo,titik pusat kawasan wisata kota lama Saat ini, Patung Slamet Riyadi menjadi salah satu landmark terkenal di Kota Solo dan sering dijadikan tempat berfoto serta lokasi kegiatan budaya seperti car free day dan festival kota.</p><p><b>Jam buka:</b> 24 jam</p>
+<p><b>Lokasi:</b> Perempatan Gladag, Jalan Slamet Riyadi, Kota Solo.</p>
+<div class="card">
+<iframe
+src="https://www.google.com/maps?q=Surakarta&output=embed"
+width="100%"
+height="180px"
+style="border:12px;">
+</iframe>
+</div>
+
+<p><b>Tiket masuk:</b> Gratis</p>
+<p><b>Rating : ★★★★ 4.6/5</b> (1,4rb ulasan wisatawan)</p>
+      <p><b>Pemesanan :</b><a href="Formulir-pemesanan.html">Klik pesan</a></p>
+</div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+</body> 
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+</script>
+</html>
