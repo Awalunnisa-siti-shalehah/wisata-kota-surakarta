@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <!-- MENU -->
+  <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+      <li><a href="Hal-10-emergency.html">Emergency</a></li>
+       <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+       <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+       <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+           <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+      <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER (hero / banner) -->
+<header id="home">
+  <h1>Kuliner</h1>
+  <p style="background-color:#A67C00;">
+   Khas kuliner Surakarta
+  </p>
+</header>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()">
+</div>
+<section id="kuliner">
+
+<h2>Wisata kuliner khas kota solo</h2>
+<div class="scroll-container">
+<div class="item">
+<img src="Wisku1.jpg">
+<p>Pasar Gede Hardjonagoro - pusat jajanan tradisional Solo dan jajanan pasar khas.</p>
+</div>
+
+<div class="item">
+<img src="Wisku2.jpg">
+<p>Galabo Solo – pusat wisata kuliner malam dengan berbagai makanan khas Solo dalam satu kawasan.</p>
+</div>
+
+<div class="item">
+<img src="Wisku3.jpg">
+<p>Ngarsopuro Night Market – tempat wisata kuliner malam dengan jajanan tradisional dan modern.</p>
+</div>
+
+<div class="item">
+<img src="Wisku4.jpg">
+<p>Tengkleng Klewer Bu Edi – terkenal dengan menu tengkleng khas Solo yang gurih dan autentik.</p>
+</div>
+
+<div class="item">
+<img src="Wisku5.jpg">
+<p>Serabi Notosuman Ny. Lidia – pusat serabi Solo terkenal sejak lama.</p>
+</div>
+
+<div class="item">
+<img src="Wisku6.jpg">
+<p>Nasi Liwet Wongso Lemu – warung legendaris yang menyajikan nasi liwet dengan ayam suwir, labu siam, dan santan gurih khas Solo sejak dulu.</p>
+</div>
+
+<div class="item">
+<img src="Wisku7.jpg">
+<p>Soto Triwindu – tempat makan soto khas Solo dengan kuah bening gurih yang populer di kalangan wisatawan.</p>
+</div>
+</div>
+</section>
+
+<div class="card">
+<section id="kuliner">
+
+<h2>Makanan kuliner khas solo</h2>
+
+<div class="scroll-container">
+<div class="item">
+<img src="Makanan1.jpg">
+<p>Serabi Solo – jajanan legendaris khas Surakarta.</p>
+</div>
+
+<div class="item">
+<img src="Makanan2.jpg">
+<p>Timlo Solo – sup ayam bening khas Solo.</p>
+</div>
+
+<div class="item">
+<img src="Makanan3.jpg">
+<p>Getuk Lindri – jajanan tradisional dari singkong.</p>
+</div>
+
+<div class="item">
+<img src="Makanan4.jpg">
+<p>Nasi Pecel – nasi dengan sayur dan bumbu kacang.</p>
+</div>
+
+<div class="item">
+<img src="Makanan5.jpg">
+<p>Sate buntel  – daging cincang yang dibumbui, dililit lemak jala, lalu dibakar</p>
+</div>
+
+<div class="item">
+<img src="Makanan6.jpg">
+<p>Timlo – Kuah kaldu yang gurih, nasi yang lembut, sayuran yang segar, dan daging yang empuk.</p>
+</div>
+
+<div class="item">
+<img src="Makanan7.jpg">
+<p>Selat Solo– perpaduan unik manis, gurih, dan sedikit asam dengan aroma rempah yang kaya.</p>
+</div>
+</div>
+<div class="cta">
+  <a href="Hal-11-oleh-oleh.html">Oleh oleh kuliner khas solo</a>
+</div>
+</div>
+<script>
+  function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+</script>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+</body>
+</html>
+
+
