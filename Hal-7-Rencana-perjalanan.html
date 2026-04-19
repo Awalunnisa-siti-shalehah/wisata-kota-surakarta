@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kota solo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="menu">
+<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Hal-10-emergency.html">Emergency</a></li>
+       <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+       <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+       <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+           <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+      <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <h1>Rencana kota solo</h1>
+  <p style="background-color:#A67C00;">
+  contoh rencana perjalanan
+  </p>
+</header>
+
+<div id="overlay" onclick="toggleMenu()"></div>
+
+
+<div class="card">
+  <h2 style="background-color:#e2b94f;">Contoh Rencana Perjalanan Wisata di Surakarta</h2>
+  <p>ini adalah daftar rencana liburan :</p>
+  <h3> • Hari pertama disurakarta :</h3>
+  <p>Hari 1 - 
+  Keraton Surakarta Hadiningrat,Pura Mangkunegaran,makan di Pasar Gede Hardjonagoro,malam ke Galabo Solo</p>
+  <p>Hari 2 - Kampung Batik Laweyan
+, Taman Sriwedari, foto di Patung Slamet Riyadi</p>
+<h3>• Destinasi alternatif :</h3>
+<p>Hari 1 - De Tjolomadoe , Pasar Triwindu</p>
+<p>Hari 2 - Lokananta , Ngarsopuro Night Market</p>
+</div>
+<div class="card">
+<h2 style="background-color:#e2b94f;"> Pilihan Itinerary Sesuai Budget Wisata :</h2>
+<h3> •Wisata hemat (budget) :</h3>
+<p>Transportasi :
+naik Batik Solo Trans , jalan kaki , ojek online.</p>
+<p>Tempat wisata : 
+- Keraton Surakarta Hadiningrat
+- Taman Sriwedari</p>
+<p>Kuliner :
+makan di Pasar Gede Hardjonagoro </p>
+
+<p> Penginapan :
+hotel kelas melati / homestay</p>
+
+<p>Ini cocok buat pelajar, backpacker, atau orang hemat!.</p>
+
+<h3>• wisata nyaman (luxury)</h3>
+<p>Transportasi :
+mobil sewa / travel pribadi</p>
+<p>Tempat wisata :
+Pura Mangkunegaran
+De Tjolomadoe</p>
+<p>Kuliner :
+restoran khas Solo terkenal</p>
+<p> Penginapan :
+hotel berbintang</p>
+<p>Ini buat wisata yang lebih santai dan fasilitas lengkap.</p>
+</div>
+
+<div class="card">
+  <h2>Itinerary Budget (Hemat) :</h2>
+<p>Cocok untuk wisatawan yang ingin menikmati Solo dengan biaya terjangkau menggunakan transportasi umum dan kuliner tradisional.</p>
+<h2>Itinerary Luxury (Nyaman) :</h2>
+<p>Cocok untuk wisatawan yang ingin menikmati perjalanan dengan fasilitas lebih lengkap dan transportasi pribadi.</p>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+</body>
+<script>function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+</script>
+</html>
