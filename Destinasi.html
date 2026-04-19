@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <!-- MENU -->
+  <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+      <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+      <li><a href="Hal-10-emergency.html">Emergency</a></li>
+       <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+       <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+       <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+           <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+      <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER (hero / banner) -->
+<header id="home">
+  <h1>Festival Surakarta</h1>
+  <p style="background-color:#A67C00;">
+    Festival yang akan datang
+  </p>
+</header>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+<div class="card">
+<img src="Festival 4.jpg">
+<h3>Festival solo menari 2026</h3>
+<p>Taman bersejarah dan pusat kegiatan seni budaya di Kota Solo.</p>
+<p><b>info lengkap :</b> Solo Menari 2026 akan digelar pada 28–29 April 2026, bertepatan dengan Hari Tari Sedunia, dengan tema "Aku Kipas" (Aha Pankha). Festival ini menampilkan aksi kolosal 3.000 penari di pusat kota, termasuk Balai Kota Solo dan Titik Nol. Acara ini merupakan perpaduan pertunjukan tari, workshop, dan kuliner khas.</p><iframe 
+  src="https://www.google.com/maps?q=De%20Tjolomadoe%20Karanganyar&output=embed"
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius:12px;">
+</iframe>
+<p><b>Lokasi:</b> berpusat di Balai Kota Solo, Koridor Gatot Subroto, dan Titik Nol KM Solo.</p>
+<p><b>Tiket masuk:</b>Gratis</p>
+</div>
+
+<div class="card">
+<img src="Festival 3.jpg">
+<h3>Festival jenang solo</h3>
+<p><b>info lengkap :</b>Festival Jenang Solo 2026 diselenggarakan pada Selasa, 17 Februari 2026, di Koridor Ngarsopuro untuk memeriahkan HUT ke-281 Kota Solo. Acara ini menyajikan kirab, masak besar, dan pembagian 15 ribu porsi jenang gratis bertema "Nirmala Nusantara" serta memperkenalkan Jenang Nirmala sebagai simbol doa dan keharmonisan</p>
+.<iframe 
+  src="https://www.google.com/maps?q=Jl%20Gatot%20Subroto%20Solo&output=embed"
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius:12px;">
+</iframe>
+<p><b>Lokasi:</b>Koridor Ngarsopuro, Surakarta</p>
+<p><b>Tiket masuk:</b> Gratis</p>
+</div>
+
+<div class="card">
+<img src="Festival 2.jpg">
+<h3>Festival SOEKARNORUN.SOC 2026</h3>
+<p><b>info lengkap :</b>Festival Soekarno Run Solo 2026 (SOEKARNORUN.SOC) dijadwalkan berlangsung pada Minggu, 28 Juni 2026 di Alun-Alun Utara Solo, Surakarta. Acara tahunan kedua ini mengusung tema "Speed & Fun" untuk memperingati Bulan Bung Karno dengan target 8.000 peserta.
+.</p><iframe 
+  src="https://www.google.com/maps?q=Alun%20Alun%20Utara%20Surakarta&output=embed"
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius:12px;">
+</iframe>
+<p><b>Lokasi:</b>Alun-Alun Utara Solo, Surakarta</p>
+<p><b>Tiket masuk:</b> 100.000-225.000</p>
+</div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+</script>
+  </html>
