@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kota solo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <div class="brand-text">
+      <h1>SOLO</h1>
+      <span>The Heart of Java</span>
+    </div>
+  </div>
+  
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul id="menu">
+<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Hal-10-emergency.html">Emergency</a></li>
+       <li><a href="Hal-7-Rencana-perjalanan.html">Rencana</a></li>
+       <li><a href="Hal-6-transportasi.html">Transportasi</a></li>
+       <li><a href="Hal-8-Hotel.html">Penginapan</a></li>
+           <li><a href="Hal-12-komentar.html">Suara wisatawan</a></li>
+    <li><a href="Hal-9-konversi.html">Wisata keberlanjutan</a></li>
+      <li><a href="Formulir-pemesanan.html">Form pemesanan</a></li>
+  </ul>
+</nav>
+<header id="home">
+  <h1>Formulir pemesanan</h1>
+  <p style="background-color:#A67C00;">
+   pemesanan tour
+  </p>
+</header>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+
+<main class="container">
+
+<form id="orderForm" class="card">
+
+<section>
+  <h3>Data Pribadi</h3>
+
+  <div class="form-group">
+    <label>Nama Lengkap:</label>
+    <input type="text" name="nama" required>
+  </div>
+
+  <div class="form-group">
+    <label>Email:</label>
+    <input type="email" name="email" required>
+  </div>
+  
+  <div class="form-group">
+    <label>Password Akun:</label>
+    <input type="password" name="pass" required>
+  </div>
+
+  <div class="form-group">
+    <label>Nomor WhatsApp:</label>
+    <input type="tel" name="telepon">
+  </div>
+ <div class="form-group">
+    <label>Pilihan Destinasi:</label>
+  <select name="destinasi" id="destinasi" required>
+      <option value="">-- Pilih Destinasi --</option>
+      <option>Lokananta</option>
+      <option>Patung Slamet Riyadi</option>
+      <option>Keraton Kasunanan Surakarta</option>
+      <option>Kampung Batik Laweyan</option>
+      <option>De Tjolomadoe</option>
+      <option>Pasar Triwindu</option>
+      <option>Pura Mangkunegaran</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label>Jumlah Tiket:</label>
+    <input type="number" name="jumlah_tiket" min="1" required>
+  </div>
+
+ 
+</section>
+<section>
+  <h3>pemesanan hotel</h3>
+    <div class="form-group">
+    <label>Pilihan Hotel:</label>
+<select name="hotel" id="hotel" required>
+  <option value="">-- Pilih hotel dulu --</option>
+      <option>Alila Solo</option>
+      <option>The Royal Surakarta Heritage - Handwritten Collection</option>
+      <option>Swiss-Belhotel Solo</option>
+      <option>Solo Paragon Hotel & Residences</option>
+      <option>The Sunan Hotel Solo</option>
+      <option>HARRIS Hotel & Convention Solo</option>
+      <option>POP! Hotel Solo</option>
+      <option>Megaland Hotel Solo</option>
+      <option>Diamond Hotel Solo</option>
+    </select>
+  
+    <div class="form-group">
+    <label>Jumlah Personil:</label>
+    <input type="number" name="jumlah_personil" min="1" max="50" required>
+  </div>
+  
+  <div class="form-group">
+    <label>Tipe tempat tidur:</label>
+    <select name="transportasi" required>
+      <option>Single bed</option>
+      <option>Twin bed</option>
+      <option>Queen bed</option>
+    </select>
+      <p><b>Pemesanan :</b><a href="Hal-8-Hotel.html">detail hotel</a></p>
+  </div>
+</section>
+<section>
+  <h3>Detail Pesanan</h3>
+
+  <div class="form-group">
+    <label>Tanggal:</label>
+    <input type="date" name="tanggal" required>
+  </div>
+
+  <div class="form-group">
+    <label>Jam:</label>
+    <input type="time" name="jam" required>
+  </div>
+
+  <div class="form-group">
+    <label>Jumlah Personil:</label>
+    <input type="number" name="jumlah_personil" min="1" max="50" required>
+  </div>
+
+  <div class="form-group">
+    <label>Pilihan Transportasi:</label>
+    <select name="transportasi" required>
+      <option>Mobil Pribadi</option>
+      <option>Travel / Shuttle</option>
+      <option>Bus Pariwisata</option>
+      <option>Ojek Online</option>
+      <option>Sepeda / Motor</option>
+    </select>
+          <p><b>Pemesanan :</b><a href="Hal-6-transportasi.html">detail transpotasi</a></p>
+  </div>
+</section>
+<section>
+  <h3>Lokasi Penjemputan</h3>
+
+  <div class="form-group">
+    <label>Provinsi:</label>
+    <select name="provinsi" required>
+      <option>Jawa Barat</option>
+      <option>DKI Jakarta</option>
+      <option>Jawa Tengah</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Kota:</label>
+    <select name="kota" required>
+      <option>Bandung</option>
+      <option>Jakarta</option>
+      <option>Semarang</option>
+      <option>Surakarta</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Kelengkapan Lokasi / Meeting Point:</label>
+    <input type="text" name="meeting_point" required>
+  </div>
+</section>
+
+<section>
+  <h3>Pembayaran Transaksi</h3>
+
+  <div class="form-group">
+    <label>Metode Pembayaran:</label>
+    <select name="ewallet" required>
+      <option>Dana</option>
+      <option>OVO</option>
+      <option>Gopay</option>
+      <option>Transfer Bank</option>
+    </select>
+  </div>
+</section>
+
+<section>
+  <input type="reset" value="Kosongkan Form">
+  <input type="submit" value="Kirim Pesanan">
+</section>
+
+</form>
+
+<div id="result" style="display:none; margin-top:20px;"></div>
+
+</main>
+
+<script>
+const dataHotel = {
+  "Lokananta": [
+    "Swiss-Belhotel Solo",
+    "POP! Hotel Solo"
+  ],
+  "Patung Slamet Riyadi": [
+    "Alila Solo",
+    "Solo Paragon Hotel & Residences"
+  ],
+  "Keraton Kasunanan Surakarta": [
+    "The Royal Surakarta Heritage",
+    "Megaland Hotel Solo"
+  ],
+  "Kampung Batik Laweyan": [
+    "HARRIS Hotel & Convention Solo",
+    "Diamond Hotel Solo"
+  ],
+  "De Tjolomadoe": [
+    "The Sunan Hotel Solo",
+    "Alila Solo"
+  ],
+  "Pasar Triwindu": [
+    "The Royal Surakarta Heritage",
+    "Swiss-Belhotel Solo"
+  ],
+  "Pura Mangkunegaran": [
+    "Solo Paragon Hotel & Residences",
+    "HARRIS Hotel & Convention Solo"
+  ]
+};
+const destinasiSelect = document.getElementById("destinasi");
+const hotelSelect = document.getElementById("hotel");
+
+destinasiSelect.addEventListener("change", function() {
+  const selected = this.value;
+
+  hotelSelect.innerHTML = '<option value="">-- Pilih hotel --</option>';
+  
+  if (dataHotel[selected]) {
+    dataHotel[selected].forEach(hotel => {
+      const option = document.createElement("option");
+      option.value = hotel;
+      option.textContent = hotel;
+      hotelSelect.appendChild(option);
+    });
+  }
+});
+  function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+  document.getElementById("overlay").classList.toggle("show");
+}
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const data = {};
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+  localStorage.setItem("pesananTerakhir", JSON.stringify(data));
+  document.getElementById("result").style.display = "block";
+  document.getElementById("result").innerHTML =
+    "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
+
+  alert("Pesanan " + data.nama + " berhasil disimpan!");
+});
+</script>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Menu</h3>
+      <p>Home</p>
+      <p>Kategori</p>
+      <p>Detail Destinasi</p>
+      <p>Menu Tambahan</p>
+      <p>Formulir Pemesanan</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Explore Solo</h3>
+      <p>Website wisata Kota Solo yang berisi informasi destinasi, kuliner, budaya, dan penginapan.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Explore Beauty of Solo</p>
+  </div>
+</footer>
+</body>
+</html>
